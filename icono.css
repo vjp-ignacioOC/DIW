@@ -1,0 +1,17 @@
+div.iconos {
+    font-size: 50px;
+}
+
+div.tamaño {
+    font-size: 500px;
+}
+
+div.img1 > img {
+    width: 150px;
+    height: auto;
+}
+
+div.img2 > img{
+    width: 2000px;
+    height: auto;
+}
