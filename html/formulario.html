@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 05</title>
+</head>
+<body>
+    <form action="acceso.php" method="get">
+        <h1>FORMULARIO DE ALTA</h1>
+
+        Nombre y Apellidos: <input type="text" name="nombre"><br>
+
+        Contraseña de acceso: <input type="password" name="contraseña"><br>
+
+        Sexo:
+        <input type="radio" name="sexo" value="h"> Hombre
+        <input type="radio" name="sexo" value="m"> Mujer <br>
+
+        Dirección Postal:
+        <textarea name="dp"> </textarea><br>
+
+        Localidad:
+        <select>
+            <option value="cc">Cáceres</option>
+            <option value="bd">Badajoz</option>
+            <option value="tr">Trujillo</option>
+            <option value="pl">Plasencia</option>
+            <option value="me">Mérida</option>
+        </select> <br>
+
+        <input type="checkbox" name="deseo"> Deseo recibir boletines <br>
+
+        <input type="submit" name="registro" value="Realizar registro">
+    </form>
+
+
+</body>
+</html>
