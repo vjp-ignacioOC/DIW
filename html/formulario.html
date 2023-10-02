@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 05</title>
 </head>
+
 <body>
-    <form action="acceso.php" method="get">
-        <h1>FORMULARIO DE ALTA</h1>
 
-        Nombre y Apellidos: <input type="text" name="nombre"><br>
+    <table bgcolor="lightyellow">
+        <tr>
+        <td bgcolor="black" align="center" colspan="2">
+            <font color="white">FORMULARIO DE ALTA</font>
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            <form id="formulario" name="formulario" method="get" action="responderFormulario.php">
+                Nombre y Apellidos
+        </td>
+        <td>
+            <input type="text" id="nombreApellidos" name="nombreApellidosForm" pattern="[a-zA-Z]{3,}" required>
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            Contraseña de acceso</td>
+        <td>
+            <input type="password" id="contraseña" name="contraseña" required>
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            Sexo:</td>
+        <td>
 
-        Contraseña de acceso: <input type="password" name="contraseña"><br>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            Hombre
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            Mujer
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            Dirección Postal:</td>
+        <td>
 
-        Sexo:
-        <input type="radio" name="sexo" value="h"> Hombre
-        <input type="radio" name="sexo" value="m"> Mujer <br>
+            <textarea id="direccion" name="direccion" rows="6" cols="30"></textarea>
 
-        Dirección Postal:
-        <textarea name="dp"> </textarea><br>
+        </td>
+        </tr>
+        <tr>
+        <td align="right">
+            Localidad</td>
+        <td>
 
-        Localidad:
-        <select>
-            <option value="cc">Cáceres</option>
-            <option value="bd">Badajoz</option>
-            <option value="tr">Trujillo</option>
-            <option value="pl">Plasencia</option>
-            <option value="me">Mérida</option>
-        </select> <br>
+            <select name="localidad" id="localidad" class="form-select">
+                <option value="caceres">Cáceres</option>
+                <option value="badajoz">Badajoz</option>
+                <option value="merida">Mérida</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="plasencia">Plasencia</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center">
+            <input type="checkbox" name="boletin" id="boletin" value="boletin"> Deseo recibir boletines
+        </td>
+        </tr>
+        <tr>
+        <td align="center" colspan="2"><button type="submit">Realizar el registro</button></td>
+        </tr>
 
-        <input type="checkbox" name="deseo"> Deseo recibir boletines <br>
-
-        <input type="submit" name="registro" value="Realizar registro">
-    </form>
-
-
+        </form>
+    </table>
 </body>
+
 </html>
