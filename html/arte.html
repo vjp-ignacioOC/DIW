@@ -6,6 +6,44 @@
     <meta content="author" name="Ignacio Ormaeche Carral">
     <title>Formulario de arte</title>
 </head>
+
+<style>
+
+    body {
+        width: 800px;
+        height: auto;
+    }
+
+    form > div {
+        display: inline-block;
+        margin-right: 20px;
+        text-align: justify;
+    }
+
+    form div p {
+        text-align: center;
+    }
+
+    body > #titulo {
+        text-align: center;
+    }
+
+    form > #sugerencias {
+        display: block;
+        margin-top: 30px;
+    }
+
+    form > #sugerencias > textarea {
+        position: absolute;
+    }
+
+    form > #boton {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+    }
+</style>
+
 <body>
     <div id="titulo">
         <h1>CATÁLOGO DE ARTE</h1>
@@ -14,6 +52,7 @@
     <div id="entrada">
         <p> Introduce los términos de búsqueda: </p> 
     </div>
+
 
     <form method="post">
 
@@ -51,7 +90,25 @@
             <label form="disp">Colección privada</label>
         </div>
 
+        <div id="fEstilo">
+            <p><b>ESTILO</b></p>
+            <select name="estilos">
+                <option value="clas">Clásico</option>
+                <option value="abs">Abstracto</option>
+                <option value="surr">Surrealista</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
 
+        <div id="sugerencias">
+            <label form="sugerencia">Háganos saber sus sugerencias: </label>
+            <textarea name="sugerencia" rows="4" cols="40" placeholder="Me gustaría indicar que..."></textarea>           
+        </div>
+
+        <div id="boton">
+            <input type="submit" name="boton" value="Buscar">
+        </div>
+        
     </form>
 </body>
 </html>
