@@ -10,48 +10,66 @@
 <style>
   body {
     background-color: lightgray;
+    font-family:Arial, Helvetica, sans-serif ;
   }
+
   #titulo {
     text-align: center;
+    letter-spacing: 15px;
   }
 
   .subtitulo {
     background-color: gray;
     color: white;
     width: 90%;
-    height: auto;
-    text-align: left;
     padding-left: 10px;
     margin-left: 20px;
     display: block;
+    
   }
 
-  div > img {
+  img {
     float: left;
     width: auto;
-    height: auto;
+    height: 100px;
     margin-right: 20px;
+    margin-left: 5%;
   }
 
-  #html, #css {
+  #html,
+  #css {
     margin: auto;
-
+    display: block;
   }
 
+
+  p {
+    width: 80vw;
+    text-align: justify;
+  }
+
+  .rojo {
+    color: red;
+    font-style: italic;
+  }
+
+  .subrayado {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
 </style>
 
 <body>
-  <div id="titulo">
-    <h1>HTML 5 y CSS 3</h1>
-  </div>
 
-  <div class="subtitulo">
-    <h2>HTML 5</h2>
-  </div>
+  <h1 id="titulo">HTML 5 y CSS 3</h1>
+
 
   <div id="html">
+    <h2 class="subtitulo">HTML 5</h2>
     <img src="html5-logo.svg" alt="html">
-    <p>El <span class="rojo">28 de octubre de 2014</span> se aprobó la <span class="subrayado">Recomendación HTML 5</span>, culminando así diez años de trabajo. En 2004 se formó
+    <p>El <span class="rojo">28 de octubre de 2014</span> se aprobó la <span class="subrayado">Recomendación HTML
+        5</span>, culminando así diez años de trabajo. En 2004 se formó
       el WHATWG, un grupo informal de individuos y empresas decididos a impulsar el desarrollo del HTML, que se
       encontraba bloqueado en el W3C desde el año 2000. En 2007 el W3C retomó el trabajo sobre el HTML y siete años
       después se alcanzó el objetivo.</p>
@@ -59,16 +77,14 @@
     <p>Pero el HTML 5 no era más que el primer paso. El 1 de noviembre de 2016 se aprobó la recomendación HTML 5.1,
       ampliando y clarificando el HTML 5, y el W3C ya está trabajando en el HTML 5.2, previsto para finales de 2017.</p>
   </div>
-
-
-  <div class="subtitulo">
-    <h2>CSS 3</h2>
-  </div>
+  
 
   <div id="css">
+    <h2 class="subtitulo">CSS 3</h2>
     <img src="css3-logo.svg" alt="css">
     <p>Desde la aprobación de CCS 2 en 1998, el W3C ha estado trabajando en la siguiente generación de las hojas de
-      estilo, las CSS 3. Las <span class="subrayado">Recomendaciones CSS 3</span> se planificaron como un conjunto de recomendaciones en vez de como un
+      estilo, las CSS 3. Las <span class="subrayado">Recomendaciones CSS 3</span> se planificaron como un conjunto de
+      recomendaciones en vez de como un
       documento único. El proceso ha resultado largo y poco productivo: las primeras recomendaciones CSS 3 no se
       aprobaron hasta <span class="rojo">2011</span>.</p>
 
