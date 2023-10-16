@@ -1,0 +1,34 @@
+/* Pseudoclase Link */
+#a-enlace-link:link {
+    color: blue;
+}
+
+/* Pseudoclase Visited */
+#a-enlace-visited:visited {
+    color: purple;
+}
+
+/* Pseudoclase Hover */
+#a-enlace-hover:hover {
+    text-decoration: underline;
+}
+
+/* Pseudoclase Active */
+#boton-active:active {
+    background-color: yellow;
+}
+
+/* Pseudoclase Focus */
+#input-focus:focus {
+    border: 2px solid green;
+}
+
+/* Pseudoclase First child */
+.contenedor > div:first-child {
+    font-weight: bold;
+}
+
+/* Pseudoclase Nth-child (selecciona el segundo elemento) */
+.contenedor > div:nth-child(2) {
+    background-color: lightgray;
+}
