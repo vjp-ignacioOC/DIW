@@ -1,0 +1,58 @@
+/* Selector de etiqueta */
+p {
+    color: red;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* Selector múltiple */
+p.ejemplo-multiple, ul {
+    font-weight: normal;
+}
+
+/* Selector descendente */
+#contenedor-padre > p {
+    background-color: lightblue;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li {
+    color: blue;
+}
+
+/* Selector de clase */
+.clase-ejemplo {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Selector de ID */
+#elemento-unico {
+    border: 1px solid green;
+}
+
+/* Selector de hijos */
+ul > li {
+    font-size: 16px;
+}
+
+/* Selector adyacente */
+p + p {
+    font-weight: bold;
+}
+
+/* Selector de atributos */
+input[type="email"] {
+    border: 2px solid green;
+}
+
+a[target="_blank"] {
+    color: purple;
+}
