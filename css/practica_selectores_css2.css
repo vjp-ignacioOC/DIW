@@ -1,0 +1,75 @@
+h1 {
+    color:teal;
+}
+
+p strong {
+    color: red;
+}
+
+span.destacado {
+    color: orange;
+}
+
+#subtitulo {
+    color: blue;
+}
+
+p > a {
+    color: red;
+}
+
+p > a > em {
+    color: blue;
+}
+
+span.especial {
+    color: purple;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+table caption {
+    color: blue;
+
+}
+
+thead > tr {
+    color: orange;
+}
+
+tfoot > tr {
+    color: red;
+}
+
+tbody > tr > th.especial {
+    color:orange;
+}
+
+tbody > tr > th {
+    color: red;
+}
+
+tbody > tr > td {
+    color: green;
+}
+
+tbody > tr > td > strong {
+    color: orange;
+}
+
+div#adicional {
+    color: olive;
+}
+
+div #especial {
+    color: fuchsia;
+}
+
+#adicional > p > a {
+    color: green;
+}
+
+/* En este ejercicio, se deben utilizar los colores: teal, red, blue, orange, purple, olive, fuchsia y green. */
