@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    background-image: url(Fondo.png);
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+#formulario {
+    background-color: rgb(231, 230, 230);
+    width: max-content;
+    margin: auto;
+    text-align: left;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#formulario div {
+    padding: 5px;
+    color: gray;
+}
+
+#formulario #botones input {
+    box-shadow: 0 2px -5px 0 black;
+    
+    margin-right: 5px;
+}
+
+#formulario h2 {
+    font-size: 1.4em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid gray;
+}
+
+#texto {
+    font-weight: bold;
+
+}
+
+#idiomas {
+    margin: 0 0 15px 0;
+}
+
+#idiomas div:nth-of-type(1) {
+    font-weight: bold;
+}
+
+#idiomas div:nth-of-type(2) a {
+    margin-right: 15px;
+}
+
+#footer {
+    margin-top: 50px;
+    color: gray;
+}
