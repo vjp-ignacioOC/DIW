@@ -1,0 +1,9 @@
+div {
+    background-color: lightgray;
+    padding: 15px 10px;
+}
+
+div > span:nth-of-type(2) {
+   float: right; 
+}
+
