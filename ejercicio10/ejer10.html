@@ -4,26 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 10</title>
+    <script src="https://kit.fontawesome.com/9cfe8b4c32.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="ejer10.css">
 </head>
 <body>
 
     <header class="header">
+
+        <div class="iconos">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
         <div class="logoUEx"><img src="Logos/logo.png" alt="logo"></div>
-        <div class="iconos">iconos</div>
+
         <div class="menuHeader"> 
             <span>INICIO</span> <span>PREGUNTAS FRECUENTES</span> <span>ACERCA DE</span> <span id="inicioSesion">INICIAR SESIÓN</span>
         </div>
+        
     </header>
 
     <main class="main">
         <div>
             <p> Inicio &raquo; Iniciar Sesión</p>
         </div>
+        <div>
+            <h2>Iniciar Sesión</h2>
+            <hr>
+            <p>IMPORTANTE: Para iniciar sesión en el Portal MásCVUEx su nombre de usuario es su dirección de Email completa.</p>
+        </div>
         <div class="divFormulario">
-            
+            <form action="#" method="post">
+                <label form="correo" name="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo">
+                <p>Escriba su nombre de usuario en Más CVUEx.</p>
+                <br>
+                <label form="password" name="contrasena">Contraseña </label>
+                <input type="password" name="contrasena">
+                <p>Escriba la contraseña asignada a su nombre de usuario.</p>
+                <br>
+                <input type="submit" name="entrar" id="entrar" value="Entrar">
+            </form>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="logos">
+            <img src="Logos/CVUEX_Footer.png" alt="campus_virtual">
+            <img src="Logos/UEx_Footer.png" alt="uex">
+            <img src="Logos/DIPCC_Footer.png" alt="diputacion">
+            <img src="Logos/EmprendedorExt_Footer.png" alt="emprendedor">
+        </div>
+        <div>
+            <p>Campus Virtual de la UEx - Vicerrectorado de Universidad Digital - Universidad de Extremadura</p>
+        </div>
+    </footer>
 
 </body>
 </html>

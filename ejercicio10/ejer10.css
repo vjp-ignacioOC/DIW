@@ -1,0 +1,49 @@
+body {
+    background-color: gray;
+}
+
+.header {
+    background-image: url(Patrones/bg_verde.png);
+    color: white;
+    padding: 20px;
+}
+
+.header .iconos {
+text-align: right;
+}
+
+.header .logoUEx {
+    margin-left: 550px;
+}
+
+.header .menuHeader {
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+}
+
+.header .menuHeader > span {
+    margin-right: 15px;
+}
+
+.header .menuHeader > span:nth-last-of-type(1) {
+    float: right;
+}
+
+.main {
+    margin-left: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 750px;
+    margin-left: 550px;
+}
+
+.footer {
+    background-image: url(Patrones/bg_gris.png);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
