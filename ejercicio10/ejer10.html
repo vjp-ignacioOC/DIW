@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header class="header">
+    <header>
 
         <div class="iconos">
             <i class="fa-brands fa-facebook"></i>
@@ -17,15 +17,16 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
 
-        <div class="logoUEx"><img src="Logos/logo.png" alt="logo"></div>
-
-        <div class="menuHeader"> 
-            <span>INICIO</span> <span>PREGUNTAS FRECUENTES</span> <span>ACERCA DE</span> <span id="inicioSesion">INICIAR SESIÓN</span>
+        <div class="cabecera">
+            <div class="logoUEx"><img src="Logos/logo.png" alt="logo"></div>
+            <div class="menuHeader">
+                <span>INICIO</span> <span>PREGUNTAS FRECUENTES</span> <span>ACERCA DE</span> <span id="inicioSesion">INICIAR SESIÓN</span>
+            </div>
         </div>
         
     </header>
 
-    <main class="main">
+    <main>
         <div>
             <p> Inicio &raquo; Iniciar Sesión</p>
         </div>
@@ -36,12 +37,14 @@
         </div>
         <div class="divFormulario">
             <form action="#" method="post">
-                <label form="correo" name="correo">Correo electrónico</label>
-                <input type="email" name="correo" id="correo">
+                <label form="correo" name="correo">Correo electrónico <span class="asterisco">*</span></label>
+                <br>
+                <input type="email" name="correo" class="entrada" id="correo">
                 <p>Escriba su nombre de usuario en Más CVUEx.</p>
                 <br>
-                <label form="password" name="contrasena">Contraseña </label>
-                <input type="password" name="contrasena">
+                <label form="password"  name="contrasena">Contraseña<span class="asterisco">*</span> </label>
+                <br>
+                <input type="password" class="entrada" name="contrasena">
                 <p>Escriba la contraseña asignada a su nombre de usuario.</p>
                 <br>
                 <input type="submit" name="entrar" id="entrar" value="Entrar">
@@ -49,7 +52,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="logos">
             <img src="Logos/CVUEX_Footer.png" alt="campus_virtual">
             <img src="Logos/UEx_Footer.png" alt="uex">
