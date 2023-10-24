@@ -1,0 +1,171 @@
+body {
+    background-color: #17568c;
+    text-align: center;
+}
+
+main {
+    height: 90vh;
+}
+
+/* Formulario */
+div.formulario {
+    margin-top: 30px;
+}
+
+form {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    height: 290px;
+    margin: auto;
+    transform: translateY(70%);
+}
+
+form img {
+    width: 300px;
+}
+
+div.footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+div.footer>div {
+    display: inline-block;
+}
+
+div.footer div:first-child {
+    width: calc(100%/3);
+    text-align: left;
+}
+
+div.footer div:nth-child(2) {
+    width: calc(80%/3);
+}
+
+div.footer div:last-child {
+    width: calc(100%/3);
+    text-align: right;
+}
+
+div.footer a {
+    color: white;
+}
+
+div.footer img {
+    width: 25px;
+}
+
+form i {
+    padding: 5px;
+    border-right: 2px solid lightgray;
+}
+
+form div {
+    margin: 5px;
+}
+
+/* Usuario */
+
+.usuario input {
+    width: 200px;
+    height: 26px;
+    border: none;
+    margin-left: 2px;
+}
+
+.usuario i {
+    height: 18.4px;
+    padding: 6px;
+    background-color: #e4e1e1;
+}
+
+.usuario i:last-child {
+    border-right: none;
+    border-left: 2px solid lightgray;
+    width: 40px;
+    text-align: center;
+}
+
+
+/* Contraseña */
+.passw input {
+    width: 200px;
+    height: 26px;
+    border: none;
+    margin-left: 2px;
+}
+
+.passw i {
+    height: 18.4px;
+    padding: 6px;
+    background-color: #e4e1e1;
+}
+
+.passw i:last-child {
+    border-right: none;
+    border-left: 2px solid lightgray;
+    width: 40px;
+    text-align: center;
+}
+
+/*Select */
+.select,
+.passw,
+.usuario {
+    background-color: white;
+    width: 296px;
+    text-align: left;
+    margin: 10px -5px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+select {
+    width: 265px;
+    height: 30px;
+    margin-left: -4px;
+    border-left: 2px solid lightgray;
+    border: none;
+}
+
+.select i {
+    height: 18.4px;
+    padding: 6px 5px;
+    background-color: #e4e1e1;
+}
+
+
+/* Conectar */
+.conectar {
+    background-color: #2384d3;
+    border-radius: 5px;
+    width: 250px;
+    height: 6vh;
+}
+
+form .conectar>i {
+    border: none;
+    margin: auto;
+    margin-top: 8px;
+}
+
+form .conectar>input {
+    border: none;
+    background-color: #2384d3;
+    color: white;
+    font-size: 16px;
+    padding: 1px 0;
+}
+
+form .conectar {
+    width: 300px;
+    margin: 10px 0 15px 0;
+    height: 5vh;
+}
+
+main .formulario .usuario i:nth-of-type(1):hover {
+    content: "Usuario";
+}
