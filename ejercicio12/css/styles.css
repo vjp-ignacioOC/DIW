@@ -42,7 +42,7 @@ div.footer div:first-child {
 }
 
 div.footer div:nth-child(2) {
-    width: calc(80%/3);
+    width: calc(80%/3); 
 }
 
 div.footer div:last-child {
