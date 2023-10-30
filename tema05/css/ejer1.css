@@ -1,0 +1,24 @@
+
+header {
+    background-color: yellow;
+    width: 100%;
+    height: 100px;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(76, 11, 196);
+}
+
+aside {
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
