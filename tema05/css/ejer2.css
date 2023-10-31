@@ -20,35 +20,30 @@ header {
 }
 
 footer {
-    background-color: green;
-}
-
-nav {
-    height: 25vh;
-    padding: 10px;
-    background-color: rgb(70, 34, 199);
-}
-
-main {
     background-color: orange;
 }
 
-@media screen and (max-width: 600px) {
-    main {
-        height: 20vh;
-    }
+nav {
+    height: 15vh;
+    padding: 10px;
+    background-color: green;
 }
 
-@media screen and (min-width: 601px) {
-    main {
-        height: 35vh;
-        width: 50%;
+main {
+    height: 45vh;
+    background-color: rgb(70, 34, 199);
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        height: 45vh;
+        width: 30%;
         float: left;
     }
 
-    footer {
-        height: 35vh;
-        width: 50%;
+    main {
+        width: 70%;
         float: right;
     }
 }
