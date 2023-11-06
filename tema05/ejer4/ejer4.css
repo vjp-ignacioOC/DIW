@@ -1,0 +1,73 @@
+body {
+    background-color: tomato;
+    color: white;
+}
+
+.foto {
+    width: 100%;
+    height: 300px;
+}
+
+.foto img {
+    position: absolute;
+    margin: auto;
+    left: 45%;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.texto > .aficiones, .musica, .pelicula {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .foto img{
+        position: none;
+        margin-left: 5%;
+    }
+
+    .texto .aficiones {
+        position: absolute;
+        top: 0;
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .texto > .musica, .pelicula {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .foto img {
+        position: absolute;
+        margin: auto;
+        left: 45%;
+        top: 45%;
+    }
+
+    .texto .aficiones {
+        position: absolute;
+        text-align: center;
+        left: 25%;
+        top: 25%;
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .texto .musica {
+        position: absolute;
+        text-align: center;
+        left: 10%;
+        top: 45%;
+        width: 25vw;
+        height: 40vh;
+    }
+
+    
+
+}
