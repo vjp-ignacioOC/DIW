@@ -1,0 +1,107 @@
+body {
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+header {
+    background-image: url(/tema04/ejercicio10/Patrones/bg_verde.png);
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+header .iconos {
+text-align: right;
+}
+
+header .cabecera {
+    width: 700px;
+    margin: auto;
+}
+
+header .menuHeader {
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    padding: 15px;
+}
+
+header .menuHeader > span {
+    margin-right: 15px;
+}
+
+header .menuHeader > span:nth-last-of-type(1) {
+    float: right;
+    font-weight: bold;
+}
+
+main {
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+}
+
+main > div:nth-of-type(1) {
+    margin-top: -18px;
+    font-size: x-small;
+}
+
+main .asterisco {
+    color: red;
+}
+
+main .divFormulario label {
+    font-weight: bold;
+}
+
+main .divFormulario .entrada {
+    width: 500px;
+}
+
+main .divFormulario p {
+    margin-top: 0;
+    font-size: x-small;
+}
+
+footer {
+    background-image: url(/tema04/ejercicio10/Patrones/bg_gris.png);
+    color: white;
+    text-align: center;
+    padding: 20px;  
+}
+
+footer .logos {
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+}
+
+footer .logos img {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer .logos img:hover {
+    transform: scale(110%);
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        width: max-content;
+    }
+
+
+    header .cabecera .logoUEx img {
+        width: 50%;
+    }
+    header .cabecera .menuHeader {
+        width: 50%;
+    }
+    header .cabecera .menuHeader span {
+        float: none;
+        font-weight: 100;
+    }
+
+}
