@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.foto {
+    background-color: red;
+    height: 25vh;
+}
+
+.foto img {
+    height: 100px;
+}
+
+.texto .aficiones {
+    background-color: green;
+    height: 25vh;
+}
+
+.texto .musica {
+    background-color: blue;
+    color: white;
+    height: 25vh;
+}
+
+.texto .pelicula {
+    background-color: black;
+    color: white;
+    height: 25vh;
+}
+
+@media screen and (min-width: 600px) {
+    .foto {
+        height: 15vh;
+    }
+
+    .foto img {
+        height: 100px;
+    }
+
+    .texto .aficiones {
+        float: left;
+        height: 70vh;
+        width: 20%;
+    }
+
+    .texto .musica {
+        display: inline-block;
+        height: 70vh;
+        width: 80%;
+    }
+
+    .texto .peliculas {
+        height: 15vh;
+    }
+}
