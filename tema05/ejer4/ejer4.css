@@ -61,11 +61,21 @@ body {
 
     .texto .musica {
         position: absolute;
-        text-align: center;
+        text-align: left;
         left: 10%;
         top: 45%;
         width: 25vw;
         height: 40vh;
+    }
+
+    .texto .pelicula {
+        position: absolute;
+        text-align: right;
+        right: 10%;
+        top: 45%;
+        width: 25vw;
+        height: 40vh;
+
     }
 
     
