@@ -128,6 +128,25 @@ body {
     filter: brightness(.8);
    }
    
-   @media screen and (max-width: 620px) {
+   @media screen and (max-width: 1024px) {
+
+    .formulario .button {
+        font-size: x-small;
+        width: 40%;
+        height: 3vh;
+    }
+
+    .button::before, .button::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-80%, -20%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+       }
 
    }
