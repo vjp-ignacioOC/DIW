@@ -56,17 +56,16 @@ body {
     font-size: small;
 }
 
-.formulario > form > p > a {
+a {
     text-decoration: none;
     color: black;
 }
 
 .formulario .button {
-    width: 10vw;
+    width: 8vw;
     padding: 5px;
     margin-bottom: 8px;
     border-radius: 5%;
-    width: 15%;
     border-radius: 10%;
     box-shadow: 0 2px 0 1x;
     color: rgb(97, 23, 23);
