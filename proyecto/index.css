@@ -6,36 +6,36 @@ body {
     width: 100%;
 }
 
-header {
+.header {
     background-color: #3d7906;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-header img {
+.header img {
     width: 150px;
 }
 
-header hr {
+.header hr {
     width: 60%;
 }
 
-header nav {
+.header nav {
     width: 75%;
     text-align: center;
     padding: 10px;
 }
 
-header nav ul li {
+.header nav ul li {
     display: inline-block;
 }
 
-header nav ul li a {
+.header nav ul li a {
     margin-right: 10px;
 }
 
-header nav ul li:nth-last-of-type(2), li:nth-last-of-type(1) {
+.header nav ul li:nth-last-of-type(2), li:nth-last-of-type(1) {
     float: right;
 }
 
@@ -55,7 +55,7 @@ nav a {
     color: #fff;
 }
 
-#content {
+.main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -63,7 +63,7 @@ nav a {
 
 
 
-footer {
+.footer {
     background-color: #3d7906;
     color: #fff;
     text-align: center;

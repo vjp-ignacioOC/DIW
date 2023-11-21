@@ -1,0 +1,144 @@
+body {
+    background-color: lightgreen;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23db4206' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L10 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    align-items: center;  
+    align-content: center;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.formulario {
+    border: 1px solid brown;
+    border-radius: 5%;
+    text-align: center; 
+    background-color: darkgreen;
+    color: white;
+    width: 30vw;
+    padding: 15px;
+}
+
+.formulario div img {
+    margin-bottom: -18px;
+    width: 10vw;
+}
+
+.formulario input {
+    width: 15vw;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.formulario > form > hr {
+    width: 90%;
+}
+
+.formulario #contra {
+    margin-bottom: 10px;
+}
+
+.formulario form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario > form > p {
+    font-size: small;
+}
+
+.formulario > form > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.formulario .button {
+    width: 8vw;
+    padding: 5px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    border-radius: 5%;
+    border-radius: 10%;
+    box-shadow: 0 2px 0 1x;
+    color: rgb(97, 23, 23);
+    background-color: beige;
+    font-size: small;
+}
+
+.button {
+    --color: rgb(180, 69, 69);
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 10px;
+    border: 1px solid;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-70%, -30%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(238, 238, 238);
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+@media screen and (max-width: 1024px) {
+    .formulario .button {
+        font-size: x-small;
+        width: 40%;
+        height: 3vh;
+    }
+
+    .button::before, .button::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-80%, -20%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+    }
+}
