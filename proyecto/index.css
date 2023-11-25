@@ -81,7 +81,6 @@ nav a {
 
 .main {
     max-width: 800px;
-    margin: 20px 120px;
     padding: 20px;
 }
 
@@ -94,7 +93,7 @@ nav a {
 
 .video {
     margin: auto;
-    margin-left: 100px;
+    margin-left: 50px;
     text-align: center;
 }
 
