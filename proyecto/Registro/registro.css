@@ -12,8 +12,80 @@ body {
     border: 0;
     padding: 0;
 }
+body {  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "formulario formulario"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  .formulario { grid-area: formulario; }
+  .footer { grid-area: footer; }
+  
+
+
+.header {
+    background-color: #3d7906;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header img {
+    width: 150px;
+}
+
+.header hr {
+    width: 60%;
+}
+
+.header nav {
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+}
+
+.header nav ul li {
+    display: inline-block;
+}
+
+.header nav ul li a {
+    margin-right: 10px;
+}
+
+.header nav ul li:nth-last-of-type(1) {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    background-color: #3d7906;
+    color: #fff;
+    text-align: center;
+}
 
 .formulario {
+    margin: auto;
     border: 1px solid brown;
     border-radius: 5%;
     text-align: center; 
@@ -23,10 +95,6 @@ body {
     padding: 15px;
 }
 
-.formulario div img {
-    margin-bottom: -18px;
-    width: 10vw;
-}
 
 .formulario input {
     width: 15vw;
