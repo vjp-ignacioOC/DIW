@@ -71,7 +71,7 @@ nav a {
 }
 
 .container .main p {
-    
+    max-width: 90%;
 }
 
 .footer {
