@@ -1,12 +1,11 @@
-
 body {
     background-color: lightgreen;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23db4206' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-family: sans-serif, Arial;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;  
+    align-items: center;
     align-content: center;
     height: 100vh;
     margin: 0;
@@ -14,52 +13,60 @@ body {
     padding: 0;
 }
 
-body {  display: grid;
+body {
+    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header"
-      "formulario formulario"
-      "footer footer";
-  }
-  
-  .header { grid-area: header; }
-  .formulario { grid-area: formulario; }
-  .footer { grid-area: footer; }
-  
+        "header header"
+        "formulario formulario"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+footer {
+    grid-area: footer;
+}
 
 
-.header {
+
+header {
     background-color: #3d7906;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-.header img {
+header img {
     width: 150px;
 }
 
-.header hr {
+header hr {
     width: 60%;
 }
 
-.header nav {
-    width: 75%;
+header nav {
     text-align: center;
-    padding: 10px;
+    
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
 }
 
-.header nav ul li a {
+header nav ul li a {
     margin-right: 10px;
 }
 
@@ -84,10 +91,11 @@ nav a {
     margin: auto;
     border: 1px solid brown;
     border-radius: 5%;
-    text-align: center; 
+    text-align: center;
     background-color: darkgreen;
     color: white;
     width: 30vw;
+    height: auto;
     padding: 15px;
 
 }
@@ -98,7 +106,7 @@ nav a {
     margin: 5px 0;
 }
 
-.formulario > form > hr {
+.formulario>form>hr {
     width: 90%;
 }
 
@@ -115,7 +123,7 @@ nav a {
 }
 
 
-.formulario > form > p {
+.formulario>form>p {
     font-size: small;
 }
 
@@ -124,7 +132,7 @@ a {
     color: black;
 }
 
-.footer {
+footer {
     background-color: #3d7906;
     color: #fff;
     text-align: center;
@@ -158,9 +166,10 @@ a {
     text-transform: uppercase;
     color: var(--color);
     z-index: 1;
-   }
-   
-   .button::before, .button::after {
+}
+
+.button::before,
+.button::after {
     content: '';
     display: block;
     width: 50px;
@@ -171,32 +180,33 @@ a {
     z-index: -1;
     background-color: var(--color);
     transition: 1s ease;
-   }
-   
-   .button::before {
+}
+
+.button::before {
     top: -1em;
     left: -1em;
-   }
-   
-   .button::after {
+}
+
+.button::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
-   }
-   
-   .button:hover::before, .button:hover::after {
+}
+
+.button:hover::before,
+.button:hover::after {
     height: 410px;
     width: 410px;
-   }
-   
-   .button:hover {
+}
+
+.button:hover {
     color: rgb(238, 238, 238);
-   }
-   
-   .button:active {
+}
+
+.button:active {
     filter: brightness(.8);
-   }
-   
-   @media screen and (min-width: 425px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
 
     .formulario .button {
         font-size: x-small;
@@ -204,7 +214,8 @@ a {
         height: 3vh;
     }
 
-    .button::before, .button::after {
+    .button::before,
+    .button::after {
         content: '';
         display: block;
         width: 50px;
@@ -215,6 +226,58 @@ a {
         z-index: -1;
         background-color: var(--color);
         transition: 1s ease;
-       }
+    }
 
-   }
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        display: block;
+        height: 100vh;
+    }
+
+    header img {
+        width: 30vw;
+        height: auto;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    header nav ul li:first-child {
+        display: block;
+    }
+
+    header nav ul li:nth-child(2), header nav ul li:nth-child(3), header nav ul li:nth-child(4) {
+        display: none;
+    }
+
+
+    .formulario {
+        width: 80vw;
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .formulario input {
+        width: 70%;
+    }
+
+    .formulario .button {
+        width: 70%;
+        font-size: small;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        font-size: small;
+    }
+
+
+}
