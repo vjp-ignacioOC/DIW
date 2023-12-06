@@ -1,0 +1,148 @@
+/* BODY */
+
+body {
+    background-color: burlywood;
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    background-color: #3d7906;
+    color: #fff;
+    text-align: center;
+    height: 22vh;
+    overflow: hidden;
+}
+
+header img {
+    height: 60%;
+    width: auto;
+}
+
+header hr {
+    width: 70%;
+}
+
+header nav {
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    margin-right: 10px;
+}
+
+header nav ul li:nth-last-of-type(1),
+li:nth-last-of-type(2) {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* CONTAINER */
+
+.container {
+    height: calc(100vh - 30.3vh);
+    text-align: center;
+    overflow-y: scroll;
+}
+
+
+.container main p {
+    max-width: 90%;
+}
+
+/* RUTAS */
+
+.rutas {
+    margin-left: 14vw;
+}
+
+.rutas div {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    justify-content: center;
+}
+
+.rutas img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d7906;
+    color: #fff;
+    text-align: center;
+    height: 8.3vh;
+}
+
+footer p {
+    display: flex;
+}
+
+.footer img {
+    width: 120px;
+    height: 80px;
+}
+
+/* HOVER */
+
+main h3:hover {
+    color: #3d7906;
+    transform: scale(120%);
+    transition: transform 1s, color 1.2s;
+}
+
+.rutas i:hover + img, .container main img:hover {
+    opacity: 1;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 426px) {
+    
+}
