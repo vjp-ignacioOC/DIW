@@ -5,6 +5,7 @@ body {
     font-family: sans-serif, Arial;
     margin: 0;
     padding: 0;
+    height: 100vh;
     /*width: 100vw;*/
     /*height: 100%;*/
 }
@@ -110,9 +111,9 @@ footer p {
     display: flex;
 }
 
-.footer img {
+footer img {
     width: 120px;
-    height: 80px;
+    height: auto;
 }
 
 /* HOVER */

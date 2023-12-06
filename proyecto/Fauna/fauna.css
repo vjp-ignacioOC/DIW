@@ -1,0 +1,127 @@
+/* BODY */
+
+body {
+    background-color: burlywood;
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #3d7906;
+    color: #fff;
+    text-align: center;
+    height: 22vh;
+    overflow: hidden;
+}
+
+header img {
+    height: 60%;
+    width: auto;
+}
+
+header hr {
+    width: 70%;
+}
+
+header nav {
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+
+header nav ul li a {
+    margin-right: 10px;
+}
+
+header nav ul li:nth-last-of-type(2),
+li:nth-last-of-type(1) {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* CONTAINER */
+
+.container {
+    
+    height: calc(100vh - 30.3vh);
+    width: 80%;
+    text-align: center;
+    overflow-y: scroll;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-sizing: border-box;  
+    padding: 20px;  
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.info p {
+    max-width: 90%;
+}
+
+
+.info img {
+    width: 10vw;
+    height: auto;
+}
+
+
+.info p {
+    text-align: justify; 
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d7906;
+    color: #fff;
+    text-align: center;
+    height: 8.3vh;
+}
+
+footer p {
+    display: flex;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 426px) {
+
+}
