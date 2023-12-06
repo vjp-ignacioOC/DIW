@@ -138,12 +138,12 @@ h2:hover {
         display: flex;
         justify-content: center;
         width: 100vw;
+        margin-bottom: 2vh;
     }
 
     header nav ul li:nth-last-of-type(2),
     header nav ul li:nth-last-of-type(1) {
         float: none;
-        margin-top: 10px;
         margin-left: 5vw;
     }
 
@@ -172,6 +172,7 @@ h2:hover {
         max-width: none;
         width: 100%;
         margin-right: 0;
+        padding: 0;
         overflow: hidden;
         text-align: center;
     }
