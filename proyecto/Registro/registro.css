@@ -23,42 +23,42 @@ body {  display: grid;
       "footer footer";
   }
   
-  .header { grid-area: header; }
+  header { grid-area: header; }
   .formulario { grid-area: formulario; }
-  .footer { grid-area: footer; }
+  footer { grid-area: footer; }
   
 
 
-.header {
+header {
     background-color: #3d7906;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-.header img {
+header img {
     width: 150px;
 }
 
-.header hr {
+header hr {
     width: 60%;
 }
 
-.header nav {
+header nav {
     width: 75%;
     text-align: center;
     padding: 10px;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
 }
 
-.header nav ul li a {
+header nav ul li a {
     margin-right: 10px;
 }
 
-.header nav ul li:nth-last-of-type(1) {
+header nav ul li:nth-last-of-type(1) {
     float: right;
 }
 
@@ -78,7 +78,7 @@ nav a {
     color: #fff;
 }
 
-.footer {
+footer {
     background-color: #3d7906;
     color: #fff;
     text-align: center;
@@ -190,7 +190,7 @@ nav a {
     filter: brightness(.8);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 425px) and (max-width: 1024px) {
     .formulario .button {
         font-size: x-small;
         width: 40%;
@@ -209,4 +209,62 @@ nav a {
         background-color: var(--color);
         transition: 1s ease;
     }
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        display: block;
+        height: 100vh;
+    }
+
+    header img {
+        width: 30vw;
+        height: auto;
+    }
+
+    header nav {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    header nav ul li:first-child {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li:nth-child(2), header nav ul li:nth-child(3), header nav ul li:nth-child(4),header nav ul li:nth-child(5)  {
+        display: none;
+    }
+
+
+    .formulario {
+        width: 80vw;
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .formulario input {
+        width: 70%;
+    }
+
+    .formulario .button {
+        width: 70%;
+        font-size: small;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        font-size: small;
+    }
+
 }
