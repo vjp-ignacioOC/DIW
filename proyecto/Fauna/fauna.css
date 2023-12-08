@@ -83,14 +83,30 @@ nav a {
 
 .info p {
     max-width: 90%;
+    position: relative;
+    text-align: justify;
 }
 
 
 .info img {
     width: 10vw;
     height: auto;
+    margin: 0 10px 10px 0;
 }
 
+.info p:nth-of-type(1) img, .info p:nth-of-type(6) img  {
+    float: left;
+}
+.info p:nth-of-type(4) img {
+    float: right;
+}
+
+
+.info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .info p {
     text-align: justify; 
