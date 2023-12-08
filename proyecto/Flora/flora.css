@@ -118,9 +118,57 @@ footer img {
 
 
 @media screen and (min-width: 425px) and (max-width: 1024px) {
+   
 
+    header hr {
+        width: 90%;
+    }
+
+    header nav {
+        width: 80%;
+        font-size: small;
+        text-align: center;
+    }
+
+    header nav ul li:nth-last-of-type(2),
+li:nth-last-of-type(1) {
+    display: none;
+}
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .info img {
+        width: 15vw;
+    }
+
+    footer p {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 426px) {
+    header nav ul li {
+        display: none;
+    }
 
+    header nav ul li:nth-child(1) {
+        margin-left: 30%;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: small;
+    }
+
+    footer img {
+        display: none;
+    }
 }
