@@ -140,9 +140,70 @@ main h3:hover {
 
 
 @media screen and (min-width: 425px) and (max-width: 1024px) {
-    
+
+    header nav {
+        text-align: center;
+    }
+
+    header nav ul li {
+        text-align: center;
+        display: inline-block;
+    }
+
+    header nav ul li:nth-last-of-type(1),
+    li:nth-last-of-type(2) {
+        float: none;
+    }
+
+
+.container {
+    width: 90%;
+    padding: 15px;
+}
+
 }
 
 @media screen and (max-width: 426px) {
-    
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li:nth-child(1) {
+        margin-left: 30%;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        
+    }
+
+    .rutas img {
+        display: block;
+    }
+
+    footer p {
+        font-size: small;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    /* Restablecer el estilo del hover en h3 */
+    main h3:hover {
+        color: initial;
+        transform: scale(100%);
+        transition: initial;
+    }
+
+    /* Restablecer el estilo del hover en imágenes */
+    .rutas i:hover + img,
+    .container main img:hover {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
