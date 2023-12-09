@@ -190,6 +190,12 @@ footer {
     filter: brightness(.8);
 }
 
+header nav ul li:hover {
+    background-color: #51990d;
+    border-radius: 15%;
+    transform: scale(110%);
+}
+
 @media screen and (min-width: 425px) and (max-width: 1024px) {
     .formulario .button {
         font-size: x-small;

@@ -38,11 +38,9 @@ footer {
 }
 
 
-
 header {
     background-color: #3d7906;
     color: #fff;
-    padding: 10px;
     text-align: center;
 }
 
@@ -97,7 +95,6 @@ nav a {
     width: 30vw;
     height: auto;
     padding: 15px;
-
 }
 
 .formulario input {
@@ -204,6 +201,12 @@ footer {
 
 .button:active {
     filter: brightness(.8);
+}
+
+header nav ul li:hover {
+    background-color: #51990d;
+    border-radius: 15%;
+    transform: scale(110%);
 }
 
 @media screen and (min-width: 425px) and (max-width: 1024px) {

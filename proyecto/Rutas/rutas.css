@@ -123,6 +123,12 @@ footer p {
 
 /* HOVER */
 
+header nav ul li:hover {
+    background-color: #51990d;
+    border-radius: 15%;
+    transform: scale(110%);
+}
+
 main h3:hover {
     color: #3d7906;
     transform: scale(120%);
