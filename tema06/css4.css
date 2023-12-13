@@ -1,0 +1,52 @@
+.contenedor {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+
+.contenedor div {
+    display: flex;
+    color: white;
+    width: 8vw;
+    justify-content: center;
+    padding: 10px;
+}
+
+#elemento1 {
+    background-color: blue;
+    height: 4vh;
+    font-size: large;
+}
+#elemento2 {
+    background-color: rgb(20, 20, 224);
+    height: 3vh;
+    font-size: medium;
+}
+#elemento3 {
+    background-color: rgb(29, 29, 199);
+    height: 2vh;
+    font-size: small;
+}
+#elemento4 {
+    background-color: rgb(42, 42, 160);
+    height: 3vh;
+    font-size: medium;
+}
+#elemento5 {
+    background-color: rgb(26, 26, 139);
+    height: 3vh;
+    font-size: medium;
+}
+#elemento6 {
+    background-color: rgb(38, 38, 112);
+    height: 5vh;
+    font-size: x-large;
+}
+#elemento7 {
+    background-color: rgb(36, 36, 112);
+    height: 4vh;
+    font-size: large;
+}
