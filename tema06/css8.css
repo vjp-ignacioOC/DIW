@@ -1,37 +1,46 @@
 .contenedor {
     display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    /* flex-flow: row; */ 
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 800px;
 }
 
 .contenedor div {
     display: flex;
     color: white;
     width: 8vw;
-    height: 6vh;
     justify-content: center;
     padding: 10px;
 }
 
 #elemento1 {
     background-color: blue;
+    order: 1;
 }
 #elemento2 {
     background-color: rgb(20, 20, 224);
+    order: 5;
 }
 #elemento3 {
     background-color: rgb(29, 29, 199);
+    order: 3;
 }
 #elemento4 {
     background-color: rgb(42, 42, 160);
+    order: 6;
 }
 #elemento5 {
     background-color: rgb(26, 26, 139);
+    order: 3;
 }
 #elemento6 {
     background-color: rgb(38, 38, 112);
+    order: 7;
 }
 #elemento7 {
     background-color: rgb(36, 36, 112);
+    order: 4;
 }
+
+

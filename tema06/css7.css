@@ -1,17 +1,20 @@
 .contenedor {
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 800px;
+    width: 700px;
+    background-color: red;
+    height: 50vh;
 }
 
 .contenedor div {
     display: flex;
     color: white;
     width: 8vw;
-    height: 6vh;
     justify-content: center;
     padding: 10px;
+    
 }
 
 #elemento1 {
