@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    margin: 0;
+    background-color: rgb(39, 182, 39);
+    flex-direction: column;  
+}
+
+h1 {
+    display: flex;
+    background-color: rgb(189, 71, 91);
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background-color: lightgray;
+    height: fit-content;
+    margin: 0;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: row;
+}
+
+ul li {
+    display: flex;
+    width: 200px;
+    height: 3vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}

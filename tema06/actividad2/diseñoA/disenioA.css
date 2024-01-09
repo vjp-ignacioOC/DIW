@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    margin: 0;
+    background-color: rgb(39, 182, 39);
+    flex-direction: column;  
+}
+
+h1 {
+    display: flex;
+    background-color: rgb(189, 71, 91);
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background-color: grey;
+    height: 5vh;
+    gap: 20px;
+    padding-top: 30px;
+    margin: 0;
+}
