@@ -124,3 +124,18 @@ p {
     background-color: red;
     justify-content: space-around;
 }
+
+/*
+.seis div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seis div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+*/
