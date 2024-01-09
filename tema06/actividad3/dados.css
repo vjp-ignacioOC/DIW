@@ -1,0 +1,126 @@
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+/* Puntos del dado */
+
+p {
+    display: flex;
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* CARA 1 */
+
+.uno {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: center; 
+    align-items: center;    
+    align-content: center;
+}
+
+/*  CARA 2 */
+
+.dos {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.dos p:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+/* CARA 3 */
+
+.tres {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.tres p:nth-of-type(2) {
+    align-self: center;
+}
+
+.tres p:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+/* CARA 4 */
+
+.cuatro {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.cuatro div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cuatro div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CARA 5 */
+
+.cinco {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.cinco div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cinco div:nth-of-type(2) {
+    display: flex;
+    align-self: center;
+}
+
+.cinco div:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CARA 6 */
+
+.seis {
+    display: flex;
+    height: 15vh;
+    width: 15vh;
+    margin-right: 15px;
+    background-color: red;
+    justify-content: space-around;
+}
