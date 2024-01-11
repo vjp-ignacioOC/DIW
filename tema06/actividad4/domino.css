@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+}
+/*  PUNTOS */
+p {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 0;
+}
+
+/* FICHAS */
+
+.ficha {
+    display: flex;
+    height: 180px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-right: 15px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* PARTE DE ARRIBA DE LA FICHA 1 */
+
+.uno .parte1 {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.uno .parte1 div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uno .parte1 div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* LINEA DE LAS FICHAS */
+
+.linea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linea p {
+    height: 8px;
+    width: 70px;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+/* PARTE DE ABAJO DE LA FICHA 1 */
+
+.uno .parte2 {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.uno .parte2 div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uno .parte2 div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* PARTE DE ARRIBA DE LA FICHA 2 */
+
+.dos .parte1 {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.dos .parte1 div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dos .parte1 div:nth-of-type(2) {
+    display: flex;
+    align-self: center;
+}
+
+.dos .parte1 div:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* PARTE DE ABAJO FICHA 2 */
+
+.dos .parte2 {
+    display: flex;
+    height: 50%;
+    justify-content: center; 
+    align-items: center;    
+    align-content: center;
+}
+
+/* PARTE DE ARRIBA FICHA 3 */
+
+.tres .parte1 {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.tres .parte1 p:nth-of-type(2) {
+    align-self: center;
+}
+
+.tres .parte1 p:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+/* PARTE DE ABAJO FICHA 3 */
+
+.tres .parte2 {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.tres .parte2 div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tres .parte2 div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* PARTE DE ARRIBA FICHA 4 */
+
+.cuatro .parte1 {
+    display: flex;
+    height: 50%;
+}
+
+/* PARTE DE ABAJO FICHA 4 */
+
+.cuatro .parte2 {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.cuatro .parte2 p:nth-of-type(2) {
+    align-self: flex-end;
+}
