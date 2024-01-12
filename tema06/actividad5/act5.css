@@ -1,0 +1,87 @@
+h1 {
+    margin: 0;
+}
+/* HEADER Y MENU  */
+
+header {
+    display: flex;
+    color: #FFF;
+    background-color: #801515;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-direction: row;
+    color: #FFF;
+    width: 40%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+}
+
+.menu>p {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #D46a6a;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* MAIN */
+
+/* ASIDE */
+
+aside {
+    display: flex;
+
+    color: #FFF;
+    background-color: #D46a6a;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CUERPO */
+
+.cuerpo {
+    display: flex;
+
+    color: #FFF;
+    background-color: #AA3939;
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+
+    color: #FFF;
+    background-color: #550000;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+
+}
