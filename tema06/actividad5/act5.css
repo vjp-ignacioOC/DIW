@@ -11,7 +11,7 @@ header {
     display: flex;
     color: #FFF;
     background-color: #801515;
-    height: 15vh;
+    height: 10vh;
     margin: 0;
     padding: 0;
 }
@@ -37,11 +37,10 @@ header {
     justify-content: flex-end;
     width: 50%;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .menu>p {
-    display: flex;
-    justify-content: flex-end;
     background-color: #D46a6a;
     height: fit-content;
     width: fit-content;
@@ -58,22 +57,28 @@ aside {
 
     color: #FFF;
     background-color: #D46a6a;
-    height: 5vh;
+    height: 75vh;
     margin: 0;
     padding: 0;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
 
 }
 
 /* CUERPO */
 
 .cuerpo {
+    
     display: flex;
-
     color: #FFF;
     background-color: #AA3939;
-    height: 65vh;
+    height: 75vh;
     margin: 0;
     padding: 0;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -87,5 +92,55 @@ footer {
     height: 15vh;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*! Media Tablet */
+@media screen and (max-width: 700px) {
+    header {
+        height: 20vh;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .menu p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 110px;
+        height: 30px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        height: 10vh;
+    }
+    .cuerpo {
+        height: 55vh;
+        width: 100%;
+    }
+
+    .titulo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
