@@ -6,8 +6,12 @@
 }
 
 body {
-    background-color:rgba(255, 100, 50, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -15,12 +19,17 @@ header {
     width: 90%;
     margin: 20px auto;
     margin-bottom: 0px;
-    height: 100px;
-    display: flex;              /* FlexBox */
-    align-items: center;        /* Centramos verticalmente */
-    justify-content: center;    /* Centramos horizontalmente */
-    flex-wrap: wrap;            /* Si no cabe el texto en el Header salta */
-    text-align: center;         /* Centramos el texto cuando salte de línea */
+    height: 150px;
+    display: flex;
+    /* FlexBox */
+    align-items: center;
+    /* Centramos verticalmente */
+    justify-content: space-around;
+    /* Centramos horizontalmente */
+    flex-wrap: wrap;
+    /* Si no cabe el texto en el Header salta */
+    text-align: center;
+    /* Centramos el texto cuando salte de línea */
 }
 
 header h1 {
@@ -35,25 +44,30 @@ header h1 {
 }
 
 .responsive-tabs .estado {
-    display: none;               /* Ocultamos los input radio */
+    display: none;
+    /* Ocultamos los input radio */
 }
 
 .responsive-tabs .flex-tabs {
-    display: flex;                      /* Flex Tabs */
-    justify-content: space-between;     /* Espacio entre ellos */
-    flex-wrap: wrap;                    /* Wrap por si no caben */
-    border-top: 10px solid #FFD0C1;
+    display: flex;
+    /* Flex Tabs */
+    justify-content: space-between;
+    /* Espacio entre ellos */
+    flex-wrap: wrap;
+    /* Wrap por si no caben */
+    border-top: 10px solid white;
 }
 
 .responsive-tabs .flex-tabs .tab {
-    flex-grow: 1;                       /* Indicamos que crezcan por igual */
+    flex-grow: 1;
+    /* Indicamos que crezcan por igual */
 }
 
 /* Configuración del panel. Por defecto todos ocultos */
 .responsive-tabs .flex-tabs .panel {
-    background-color: #FFF;
-    padding: 20px;
-    min-height: 250px;
+    padding: 10px;
+    height: fit-content;
+    min-height: 75vh;
     width: 100%;
     flex-basis: auto;
     display: none;
@@ -62,20 +76,19 @@ header h1 {
 
 /* Configuración de los tabs. */
 .responsive-tabs .tab {
-    padding: 10px;
-    background-color: #eee;
+    padding: 5px;
     cursor: pointer;
-    border-left: 10px solid #CDCDCD;
     font-size: 1.2em;
     font-weight: bold;
-    color: #AAA;
-    border-bottom: 1px solid #ccc;
+    color: #999999;
+    border-bottom: 1px solid rgb(116, 116, 255);
     text-align: center;
+    background-color: rgb(218, 218, 218);
 }
 
 .responsive-tabs .tab:hover {
     background-color: #fff;
-    color:crimson;
+    color: #4169e2;
 }
 
 /* Al seleccionarlo cambiamos estilo del label */
@@ -86,10 +99,10 @@ header h1 {
 #tab-cinco:checked~.tabs #tab-cinco-label {
     background-color: #fff;
     cursor: default;
-    border-left-color: crimson;
     font-weight: bold;
     color: #000;
-    border-bottom: none;
+    background-color: #4169e2;
+    color: white;
 }
 
 /* Al seleccionar la etiqueta mostramos el panel */
@@ -101,13 +114,83 @@ header h1 {
     display: block;
 }
 
-/* FOOTER */
+/*
+    Header
+*/
 
-footer {
-    background-color: #4169e2;
-    color: white;
+header div img {
+    width: 200px;
+    border-radius: 15px;
 }
 
+header h1 {
+    text-transform: uppercase;
+}
+/*
+    Main
+*/
+
+main {
+    width: 90%;
+    height: fit-content;
+    min-height: 80vh;
+    display: flex;
+    border: 1px solid #4169e2;
+}
+
+/*
+    Aside
+*/
+main aside {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid #4169e2;
+}
+
+main aside img {
+    width: 220px;
+}
+
+
+/*
+    Footer
+*/
+footer {
+    width: 90%;
+    background-color: #4169e2;
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+    color: white;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.panel {
+    margin-left: 200px;
+}
+.panel img {
+    text-align: center;
+    width: 50vw;
+}
+
+.panel span {
+    font-weight: bolder;
+}
+
+
+footer i:hover {
+    transform: scale(130%);
+}
 /* Configuración de vista Responsive */
 @media (max-width: 600px) {
 
@@ -145,10 +228,6 @@ footer {
         order: 7;
     }
 
-    .flex-tabs #tab-cinco-label {
-        order: 9;
-    }
-
     .flex-tabs #tab-uno-panel {
         order: 2;
     }
@@ -163,9 +242,6 @@ footer {
 
     .flex-tabs #tab-cuatro-panel {
         order: 8;
-    }
-    .flex-tabs #tab-cinco-panel {
-        order: 10;
     }
 
     #tab-uno:checked~.tabs #tab-uno-label,
@@ -186,5 +262,28 @@ footer {
 
     .responsive-tabs .tab {
         text-align: justify;
+    }
+
+    .panel {
+        margin-left: 20px;
+    }
+    main aside {
+        display: none;
+    }
+
+    header img {
+        display: none;
+    }
+
+    main {
+        min-height: fit-content;
+    }
+
+    .responsive-tabs .flex-tabs .panel {
+        min-height: fit-content;
+    }
+
+    .logos {
+        display: none;
     }
 }

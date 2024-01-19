@@ -6,113 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/miestilo.css">
-    <script src="https://kit.fontawesome.com/9cfe8b4c32.js" crossorigin="anonymous"></script>
     <title>Ejemplo de Menú Flex con tabs Responsive</title>
+    <script src="https://kit.fontawesome.com/64869bbb12.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
     <header>
-        <img src="../img/logo_IES.jpg" alt="logo_IES">
-        <h1>IES Valle del Jerte </h1>
-        <img src="../img/logo_IyC.png" alt="logo_IyC">
+        <div class="logo1">
+            <img src="../img/logo_IES.jpg" alt="logo1">
+        </div>
+        <h1>IES Valle Del Jerte</h1>
+        <div class="logo2">
+            <img src="../img/logo_IyC.png" alt="logo2">
+        </div>
     </header>
+    <main>
+        <div class="responsive-tabs">
+            <input class="estado" type="radio" title="tab-uno" name="tabs-estado" id="tab-uno" checked />
+            <input class="estado" type="radio" title="tab-dos" name="tabs-estado" id="tab-dos" />
+            <input class="estado" type="radio" title="tab-tres" name="tabs-estado" id="tab-tres" />
+            <input class="estado" type="radio" title="tab-cuatro" name="tabs-estado" id="tab-cuatro" />
+            <input class="estado" type="radio" title="tab-cinco" name="tabs-estado" id="tab-cinco" />
+            <div class="tabs flex-tabs">
+                <label for="tab-uno" id="tab-uno-label" class="tab">Inicio</label>
+                <label for="tab-dos" id="tab-dos-label" class="tab">Ciclos Formativos</label>
+                <label for="tab-tres" id="tab-tres-label" class="tab">FCT</label>
+                <label for="tab-cuatro" id="tab-cuatro-label" class="tab">Contacto</label>
+                <label for="tab-cinco" id="tab-cinco-label" class="tab">Campus Virtual</label>
+                <div id="tab-uno-panel" class="panel">
+                    <p>El IES Valle del Jerte es uno de los centros de referencia en la ciudad de Plasencia</p> <br>
+                    <p>Cuenta con 765 alumnos pertenecientes a: </p> <br>
+                    <ul>
+                        <li>Educación Secundaria Obligatoria</li>
+                        <li>Formación Profesional Básica</li>
+                        <li>Ciclo Formativo de Grado Medio</li>
+                        <li>Ciclos Formativos de Grado Superior</li>
+                    </ul>
 
-    <div class="responsive-tabs">
-        <input class="estado" type="radio" title="tab-uno" name="tabs-estado" id="tab-uno" checked />
-        <input class="estado" type="radio" title="tab-dos" name="tabs-estado" id="tab-dos" />
-        <input class="estado" type="radio" title="tab-tres" name="tabs-estado" id="tab-tres" />
-        <input class="estado" type="radio" title="tab-cuatro" name="tabs-estado" id="tab-cuatro" />
-        <input class="estado" type="radio" title="tab-cinco" name="tabs-estado" id="tab-cinco" />
-        <div class="tabs flex-tabs">
-            <label for="tab-uno" id="tab-uno-label" class="tab">Tab 1</label>
-            <label for="tab-dos" id="tab-dos-label" class="tab">Tab 2</label>
-            <label for="tab-tres" id="tab-tres-label" class="tab">Tab 3</label>
-            <label for="tab-cuatro" id="tab-cuatro-label" class="tab">Tab 4</label>
-            <label for="tab-cinco" id="tab-cinco-label" class="tab">Tab 5</label>
-            <div id="tab-uno-panel" class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum purus enim, lobortis
-                    suscipit
-                    lectus ultricies vel. Praesent leo sem, ultricies vel hendrerit eget, facilisis at orci. Duis
-                    congue at eros
-                    eu auctor. Ut ac odio blandit, elementum lorem quis, rutrum lorem. Sed lectus dui, varius in arcu
-                    sit amet,
-                    ultricies efficitur mi. Cras sagittis nunc ac libero dignissim viverra. In eu quam sem.</p>
-            </div>
-            <div id="tab-dos-panel" class="panel">
-                <p>Donec viverra, ligula a iaculis dignissim, neque dui pulvinar tortor, sed blandit tellus ex a quam.
-                    Suspendisse rhoncus tempus mi, vel hendrerit sapien luctus sed. Vestibulum at nulla tincidunt,
-                    laoreet mauris
-                    vel, lobortis leo. Aliquam quis est purus. Curabitur erat ipsum, convallis ac egestas ac, congue
-                    quis lorem.
-                    Cras odio metus, dignissim vitae neque vel, sodales mattis ipsum. Proin pretium dapibus justo, a
-                    sollicitudin
-                    mi. Donec in est sit amet velit rutrum varius. In eros arcu, fermentum sed purus quis, malesuada
-                    egestas
-                    ante. Morbi vitae sodales diam. Quisque metus ligula, mattis eu augue vel, facilisis iaculis metus.
-                    Fusce
-                    malesuada arcu vitae eros accumsan, eget porta dui venenatis. Cras a consequat elit.</p>
-            </div>
-            <div id="tab-tres-panel" class="panel">
-                <p>Donec orci sapien, varius nec viverra a, pretium in lorem. Ut varius eros eu iaculis sollicitudin.
-                    Etiam
-                    suscipit mauris id lectus rutrum gravida. Donec vel lacus sed nisi mattis iaculis. Aliquam nec
-                    sapien urna.
-                    Sed facilisis sodales placerat. Ut ex nisl, tristique in lacus at, pharetra cursus nibh. Nam
-                    rhoncus arcu
-                    ligula, vitae ullamcorper odio viverra id. Donec lacus dui, gravida eu libero sed, lacinia
-                    condimentum urna.
-                    Praesent metus nulla, congue nec risus in, ultrices lobortis ex. Nullam ornare purus sit amet
-                    posuere
-                    porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                    egestas.</p>
-            </div>
-            <div id="tab-cuatro-panel" class="panel">
-                <p>Vivamus condimentum id arcu id aliquet. In ullamcorper lectus nec porta condimentum. Aliquam erat
-                    volutpat.
-                    Praesent vel urna ac diam sagittis dignissim non ut neque. Pellentesque non urna nisl. Sed a luctus
-                    justo. Ut
-                    a auctor diam. Nulla viverra nulla nunc, in consectetur ante pretium aliquam. Mauris mi mauris,
-                    sodales ut
-                    sagittis ut, eleifend a libero. Suspendisse in massa at lectus fringilla blandit a id tellus.
-                    Pellentesque
-                    finibus vitae sem eget posuere. Sed risus velit, malesuada sed est id, rhoncus hendrerit quam.
-                    Nulla quis
-                    nibh erat. Vestibulum at risus risus.</p>
-            </div>
-            <div id="tab-cinco-panel" class="panel">
-                <p>Vivamus condimentum id arcu id aliquet. In ullamcorper lectus nec porta condimentum. Aliquam erat
-                    volutpat.
-                    Praesent vel urna ac diam sagittis dignissim non ut neque. Pellentesque non urna nisl. Sed a luctus
-                    justo. Ut
-                    a auctor diam. Nulla viverra nulla nunc, in consectetur ante pretium aliquam. Mauris mi mauris,
-                    sodales ut
-                    sagittis ut, eleifend a libero. Suspendisse in massa at lectus fringilla blandit a id tellus.
-                    Pellentesque
-                    finibus vitae sem eget posuere. Sed risus velit, malesuada sed est id, rhoncus hendrerit quam.
-                    Nulla quis
-                    nibh erat. Vestibulum at risus risus.</p>
+                    <img src="../img/fotoIES.jpg" alt="fotoies">
+                </div>
+                <div id="tab-dos-panel" class="panel">
+                    <div>
+                        <img src="../img/Ciclos.jpg" alt="imgciclos">
+
+                        <p>Ofrecemos una amplia oferta de Formación Profesional reglada de la familia de informática y Comunicaciones</p> <br>
+                        <ul>
+                            <li>Formación Profesional Básica de <span>Informática de oficina</span></li>
+                            <li>Ciclo Formativo de Grado Medio de <span>Sistemas Microinformáticos y Redes</span></li>
+                            <li>Ciclo Formativo de Grado Superior de <span>Desarrollo de Aplicaciones Web</span></li>
+                            <li>Ciclo Formativo de Grado Superior de <span>Desarrollo de Aplicaciones Multiplataforma</span></li>
+                            <li>Ciclo Formativo de Grado Superior de <span>Administración de Sistemas Informáticos en Red</span></li>
+                        </ul><br>
+    
+                        <img src="../img/alumnos.jpg" alt="imgalumnos">
+                    </div>
+                </div>
+                <div id="tab-tres-panel" class="panel">
+                    <p>Colaboramos con decenas de empresas del sector para ofrecer oportunidades de empleo para nuestros alumnos egresados: </p> <br>
+                    <img src="../img/FCT.jpg" alt="">
+                    <img src="../img/ErasmusPlus.jpg" alt="">
+                </div>
+                <div id="tab-cuatro-panel" class="panel">
+                    <p><span>Dirección:</span> Calle Pedro y Francisco González, s/n, 10600 Plasencia, Cáceres</p>
+                    <p><span>Teléfono: </span>927 01 77 74</p>
+                    <p><span>Email: </span>ies.valledeljerte@edu.juntaex.es</p>
+
+                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Ies%20valle%20del%20jerte%20plasencia+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a></iframe></div>
+                </div>
+                
+                <div id="tab-cinco-panel" class="panel">
+                    <p>Disponemos de un Campus Virtual bajo la tecnología de Moodle para dar soporte a toda la docencia presencial de nuestros Ciclos Formativos:</p> <br>
+                    <img src="../img/Moodle.jpg" alt="imgmoodle">
+                </div>
             </div>
         </div>
-    </div>
-
-    <aside>
-        <img src="../img/aside_FPB.png" alt="logo1">
-        <img src="../img/aside_SMR.png" alt="logo2">
-        <img src="../img/aside_DAM.png" alt="logo3">
-        <img src="../img/aside_DAW.png" alt="logo4">
-        <img src="../img/aside_ASIR.png" alt="logo5">
-    </aside>
-
+        <aside>
+            <img src="../img/aside_FPB.png" alt="foto1">
+            <img src="../img/aside_SMR.png" alt="foto2">
+            <img src="../img/aside_DAM.png" alt="foto3">
+            <img src="../img/aside_DAW.png" alt="foto4">
+            <img src="../img/aside_ASIR.png" alt="foto5">
+        </aside>
+    </main>
     <footer>
-            <p>Curso 2018/19 - Diseño de Interfaces Web </p>
-            <div class="logos">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
+        <p>CICLO 2018/19 DISEÑO DE INTERFACES</p>
+        <div class="logos">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram fa-flip-both"></i>
+        </div>
     </footer>
-
 </body>
 
 </html>
