@@ -1,3 +1,22 @@
 .altura {
-    height: 75vh;
+    height: 60vh;
+}
+
+.alturaCabecera {
+    height: 25vh;
+}
+
+.alturaFooter {
+    height: 15vh;
+}
+
+.alturaMenu {
+    height: 35vh;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .altura {
+        height: 25vh;
+    }
 }
