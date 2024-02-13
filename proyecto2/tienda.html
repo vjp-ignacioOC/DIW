@@ -121,7 +121,8 @@
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi unde
                                 ratione dolores. Fuga vero in iusto eum quia, cum eaque saepe, facere tempora dicta ad?
                             </p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="toast" data-bs-target="#liveToast1" id="liveToastBtn">Añadir al carrito</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="toast"
+                                data-bs-target="#liveToast1" id="liveToastBtn">Añadir al carrito</button>
 
                             <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                                 <div id="liveToast" class="toast d-none" role="alert" aria-live="assertive"
@@ -148,7 +149,8 @@
                             <h5 class="card-title">Producto 2</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ab omnis
                                 modi porro fugiat perspiciatis veritatis dolorem odit similique atque?</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="toast" data-bs-target="#liveToast2" id="liveToastBtn2">Añadir al carrito</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="toast"
+                                data-bs-target="#liveToast2" id="liveToastBtn2">Añadir al carrito</button>
 
                             <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                                 <div id="liveToast2" class="toast d-none" role="alert" aria-live="assertive"
@@ -179,7 +181,16 @@
             <div class="offcanvas-body">
                 <!-- Contenido del Carrito de Compras -->
                 <p>Tu carrito está vacío.</p>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="cartAlert2">
+                    Tiene notificaciones sin consultar.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
             </div>
+            <button type="button" class="btn btn-primary">
+                Notifications <span class="badge bg-secondary">4</span>
+            </button>
+
         </div>
     </main>
 
