@@ -8,6 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9cfe8b4c32.js" crossorigin="anonymous"></script>
     <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -44,9 +45,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" >Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" >Registrarse</a>
-                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2 w-auto" type="search" placeholder="Buscar" aria-label="Search">
@@ -57,33 +55,85 @@
         </div>
     </nav>
 
-    <!-- Formulario -->
+    <!-- Acordeón -->
 
-    <main class="flex-shrink-0">
-        <flex-shrink-0>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12 d-flex justify-content-center align-items-center text-center">
-                        <form class="w-75 bg-warning d-flex flex-column  align-items-center">
-                            <div class="my-3 d-flex flex-column align-items-center">
-                              <label for="exampleInputEmail1" class="form-label">Email o Nombre de Usuario</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-                              <div id="emailHelp" class="form-text">El mailo el nombre de usuario deben ser válidos.</div>
+    <main class="flex-grow-1">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Iniciar Sesión
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center text-center">
+                                <form class="w-75 bg-warning d-flex flex-column  align-items-center">
+                                    <div class="my-3 d-flex flex-column align-items-center">
+                                      <label for="exampleInputEmail1" class="form-label">Email o Nombre de Usuario</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                      <div id="emailHelp" class="form-text">El mailo el nombre de usuario deben ser válidos.</div>
+                                    </div>
+                                    <div class="mb-3 d-flex flex-column align-items-center">
+                                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                      <input type="password" class="form-control " id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener conectado</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-3">Login</button>
+                                  </form>
                             </div>
-                            <div class="mb-3 d-flex flex-column align-items-center">
-                              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                              <input type="password" class="form-control " id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Mantener conectado</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary my-3">Login</button>
-                          </form>
+                        </div>
                     </div>
-                </div>
+              </div>
             </div>
-        </flex-shrink-0>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Registrarse
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center align-items-center text-center">
+                                <form class="w-75 bg-warning d-flex flex-column align-items-center">
+                                    <div class="my-3 d-flex flex-column align-items-center">
+                                        <label for="exampleInputName" class="form-label">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                        <div id="nameHelp" class="form-text">Ingresa tu nombre completo.</div>
+                                    </div>
+                                    <div class="my-3 d-flex flex-column align-items-center">
+                                        <label for="exampleInputEmail" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Asegúrate de ingresar un correo electrónico válido.</div>
+                                    </div>
+                                    <div class="mb-3 d-flex flex-column align-items-center">
+                                        <label for="exampleInputPassword" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword">
+                                    </div>
+                                    <div class="mb-3 d-flex flex-column align-items-center">
+                                        <label for="exampleInputConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputConfirmPassword">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                        <label class="form-check-label" for="exampleCheck2">Acepto los términos y condiciones</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-3">Registrarse</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+        
+              </div>
+            </div>
+          </div>
     </main>
 
 

@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima del cuerpo como el 100% de la altura de la ventana. */
+}
+
+main {
+    flex: 1; /* Hace que el elemento principal tome todo el espacio restante, empujando el pie de página hacia abajo. */
+}
+
+.footer {
+    flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido. */
+}
