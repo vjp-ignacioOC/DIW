@@ -12,3 +12,9 @@ main {
 .footer {
     flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido. */
 }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
