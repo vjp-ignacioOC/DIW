@@ -156,4 +156,24 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var accordionItems = document.querySelectorAll('.accordion-item');
+    
+            accordionItems.forEach(function (item) {
+                item.addEventListener('show.bs.collapse', function () {
+                    // Oculta los otros elementos de acordeón cuando uno se muestra
+                    accordionItems.forEach(function (otherItem) {
+                        if (otherItem !== item) {
+                            var collapse = new bootstrap.Collapse(otherItem.querySelector('.collapse'), {
+                                toggle: false
+                            });
+                            collapse.hide();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
 </html>
