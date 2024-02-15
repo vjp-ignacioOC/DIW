@@ -2,9 +2,6 @@
     width: 15vw;
 }
 
-i {
-    color: black;
-}
 
 .list-group-item.active {
     color: black; 

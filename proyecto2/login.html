@@ -15,7 +15,7 @@
      <!-- nav -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-bolt-lightning"></i> Electric Shop</a>
+            <a class="navbar-brand" href="#"><i class="text-warning fa-solid fa-bolt-lightning"></i> Electric Shop</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,11 +32,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li><a class="dropdown-item" href="sobreNosotrosProyecto.html">Proyecto</a></li>
-                            <li><a class="dropdown-item" href="#">Equipo</a></li>
+                            <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Equipo
+                            </button></li>
                             <!-- <li>
                                 <hr class="dropdown-divider">
                             </li> -->
-                            <li><a class="dropdown-item" href="#">Sedes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -139,20 +140,44 @@
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-light text-center py-3">
+    <footer class="bg-dark text-light py-3 d-flex justify-content-around">
         <div class="container">
             <div class="row">
-                <div class="col-3">2019</div>
-                <div class="col-3">- Todos los derechos reservados -</div>
-                <div class="col-3">
+                <div class="col-12 col-md-4">
+                    <p><i class="fa-solid fa-envelope"></i> info@electricshop.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+                    <p><i class="fa-solid fa-map-marker-alt"></i> Dirección, Ciudad, País</p>
+                </div>
+
+                <div class="col-12 col-md-4"> 2019 - Todos los derechos reservados - <i
+                        class="fa-regular fa-registered"></i></div>
+
+                <div class="col-12 col-md-4 text-center">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
-                <div class="col-3"><i class="fa-regular fa-registered"></i></div>
             </div>
         </div>
     </footer>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Error</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Página en construcción.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
